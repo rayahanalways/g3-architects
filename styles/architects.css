@@ -1,23 +1,85 @@
-/* work sans fonts */
+  /* work sans fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
-*{
+/* shared styles  */
+* {
     font-family: 'Work Sans', sans-serif;
 }
-nav{
+
+.btn-primary {
+    background-color:#FF900E;
+    padding: 20px 26px;
+    border-radius: 8px; 
+    border: 0;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+/* header styles started */
+.header {
+    background-color: #FFF4E7;
+    padding: 50px 240px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav ul{
+
+.nav-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+nav ul {
     display: flex;
 
-    
+
 }
-nav a{
-    text-decoration: none;
-}
-nav li{
+
+nav ul li {
     list-style: none;
-    
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+
+
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #424242;
+
+}
+
+/* banner styles */
+.banner {}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.banner img{
+    margin-top: 50px;
+    width: 100%;
 }
