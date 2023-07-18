@@ -87,13 +87,14 @@ nav a {
 
 /* team styles started  */
 main {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 70px auto;
 }
 
 .team-container {
     display: flex;
     align-items: center;
+    gap: 75px;
 
 }
 
@@ -105,8 +106,7 @@ main {
 .team-image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-
+    gap: 1.25rem;
 }
 
 .team-image-container img {
@@ -140,6 +140,91 @@ main {
 .text-features {
     color: #FF900E;
     font-weight: 700;
+}
+
+/* features styles start  */
+.features {
+    display: flex;
+    gap: 100px;
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+.feature-title {
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+
+}
+
+.feature-content {
+    width: 50%;
+
+}
+
+.feature-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.feature-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.feature-card-title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.feature-card-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.badge-title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.ten-year {
+    background-color: #FF900E;
+    width: 220px;
+    height: 100px;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.experience {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 /* facts-card-container styles  */
@@ -236,12 +321,17 @@ main {
 
     nav,
     .facts-card-container,
+    .features,
     .sponsor-image-container {
         flex-direction: column;
     }
 
     .team-container {
         flex-direction: column-reverse;
+    }
+
+    .feature-content {
+        width: 100%;
     }
 
     .facts-title,
@@ -256,14 +346,27 @@ main {
 /* mobile device  */
 @media screen and (max-width: 576px) {
     header {
-        padding: 20px;
+        padding: 30px;
     }
 
     nav,
     .team-container,
+    .features,
     .facts-card-container,
     .sponsor-image-container {
         flex-direction: column;
+    }
+
+    .feature-content {
+        width: 100%;
+    }
+
+    .feature-title {
+        text-align: center;
+    }
+
+    .ten-year {
+        padding: 20px;
     }
 
     .team-image-container {
