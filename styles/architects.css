@@ -213,6 +213,20 @@ main {
     width: 165px;
 }
 
+/* footer section styles start  */
+.footer-section {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.footer-text {
+    background-color: #FFF4E7;
+    color: #424242;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 30px 0;
+}
 
 /* tablet or medium device  */
 @media screen and (min-width: 576px) and (max-width: 960px) {
